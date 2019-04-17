@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background=" #a9cce3 "
+    tools:context="com.akash.sky.calculator.calc">
+
+    <EditText
+        android:id="@+id/num1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="First Input"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"/>
+    <EditText
+        android:id="@+id/num2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Second Input"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="125dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/sum"
+            android:onClick="Summation"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="#f7dc6f"
+            android:layout_marginTop="200dp"
+            android:text="Sum"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="200dp"
+            android:text="Sub"
+            android:background=" #ec7063 "
+            android:id="@+id/sub"
+            android:onClick="Subtraction"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="200dp"
+            android:text="Mul"
+            android:background="#f7dc6f"
+            android:id="@+id/mul"
+            android:onClick="Multiplication"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="200dp"
+            android:text="Div"
+            android:background=" #ec7063 "
+            android:id="@+id/div"
+            android:onClick="Division"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="200dp"
+            android:text="rem"
+            android:background="#f7dc6f"
+            android:id="@+id/rem"
+            android:onClick="Remainder"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="50dp"
+        android:background=" #17a589 "
+        android:id="@+id/result"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#f7dc6f"
+        android:layout_marginTop="300dp"/>
+
+
+</RelativeLayout>
